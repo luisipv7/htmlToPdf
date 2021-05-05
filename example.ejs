@@ -1,0 +1,89 @@
+<div style="border-style: groove; padding: 2px;">
+  <div class="flex-container" style="border-style: none !important;">
+    <div class="brasao" style="border-style: none !important;">
+    </div>
+
+    <div class="title" style="border-style: none !important;">
+      <h5 style="font-size: 10px;">
+        <br>
+        CPF: <%= BrazilianValues.formatToCPF(String(NrCpf).padStart(11, '0')) %>
+      </h5>
+    </div>
+
+    <br>
+
+    <style>
+      .tableName {
+        width: 30%;
+        font-weight: 50;
+        float: left;
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-top: 35px;
+      }
+
+      .tableName>tbody>tr>td {
+        text-align: left !important;
+      }
+
+      .tableName>tbody>tr>th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .flex-container {
+        display: flex;
+      }
+
+      .brasao {
+        width: 20%;
+        float: left;
+        padding-top: 8px;
+        border-style: none !important;
+      }
+
+      .qrcode {
+        width: 10%;
+        float: right;
+        padding: 2px;
+        border-style: none !important;
+      }
+
+      .title {
+        width: 45%;
+        float: left;
+        flex-direction: column;
+        border-style: none !important;
+      }
+
+      .Secondtable {
+        border: 1px solid black;
+        text-align: left;
+        width: 100%;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+
+      .Secondtable>tbody>tr>td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .Secondtable>tbody>tr>th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      .Secondtable>tbody>tr {
+        border: 1px solid white !important;
+      }
+
+      .paragraph {
+        width: 90%;
+        float: left;
+        flex-direction: column;
+        border-style: none !important;
+      }
+    </style>
